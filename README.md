@@ -1,21 +1,35 @@
 # JwtAuth
 
-**TODO: Add description**
+Wraps a Guardian pipeline for JWT authentication.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+The package can be installed
 by adding `jwt_auth` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:jwt_auth, "~> 0.1.0"}
+    {:jwt_auth, git: "https://github.com/good-monday/jwt_auth.git", tag: "0.3.0"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/jwt_auth](https://hexdocs.pm/jwt_auth).
+## Configuration
 
+Configure JwtAuth in your config file
+
+```elixir
+config :jwt_auth, JwtAuth.Module,
+  issuer: "issuer:_name",
+  secret_key: "a_secret_secret",
+  allowed_algos: ["HS256", "HS384", "HS512", ...]
+```
+
+## Usage
+
+JwtAuth is not available to be used as a Plug
+
+```elixir
+plug JwtAuth
+```

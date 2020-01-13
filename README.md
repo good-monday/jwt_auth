@@ -10,7 +10,7 @@ by adding `jwt_auth` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:jwt_auth, git: "https://github.com/good-monday/jwt_auth.git", tag: "0.3.0"}
+    {:jwt_auth, git: "https://github.com/good-monday/jwt_auth.git", tag: "0.4.0"}
   ]
 end
 ```

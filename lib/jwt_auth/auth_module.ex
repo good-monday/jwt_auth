@@ -1,4 +1,4 @@
-defmodule PhoenixPlaygroundWeb.Auth.Guardian do
+defmodule JwtAuth.Module do
   use Guardian, otp_app: :jwt_auth
 
   def subject_for_token(resource, _claims) do

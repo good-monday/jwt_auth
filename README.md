@@ -28,7 +28,7 @@ config :jwt_auth, JwtAuth.Module,
 
 ## Usage
 
-JwtAuth is not available to be used as a Plug
+JwtAuth is now available to be used as a Plug
 
 ```elixir
 plug JwtAuth

@@ -4,4 +4,4 @@
               {modules,['Elixir.JwtAuth','Elixir.JwtAuth.ErrorHandler',
                         'Elixir.JwtAuth.Module','Elixir.JwtAuth.Module.Plug']},
               {registered,[]},
-              {vsn,"0.1.0"}]}.
+              {vsn,"0.2.0"}]}.

@@ -7,7 +7,6 @@ defmodule JwtAuth.Module do
     # how it being used on `resource_from_claims/1` function.
     # A unique `id` is a good subject, a non-unique email address
     # is a poor subject.
-    IO.inspect("Subject")
     sub = to_string(resource.id)
     {:ok, sub}
   end
